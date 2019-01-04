@@ -86,7 +86,7 @@ describe "GIT" do
 
   it "12. Is 'git pull' the same as running 'git fetch' followed by 'git merge'?" do
     # "true" or "false" in a string
-    answer = "?"
+    answer = "true"
 
     encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
     expect(encode(answer)).to eq(encoded_answer)
@@ -94,7 +94,7 @@ describe "GIT" do
 
   it "13. From the add-img branch, what command do you run to fetch and merge all the
       changes from the add-img branch on the remote 'origin'?" do
-    answer = "?"
+    answer = "git pull origin add-img"
     encoded_answer = "96887ba3f8740e85c07e4ee6bebba55ad8c779d0"
     expect(encode(answer)).to eq(encoded_answer)
   end
